@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSCRE @ Ohio State</title>
+  <meta name="description" content="Black Students in Commercial Real Estate at The Ohio State University">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand"><a href="index.html">BSCRE @ OSU</a></div>
+    <label for="menuToggle" class="brand">☰</label>
+    <input type="checkbox" id="menuToggle" style="display:none">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="internships.html">Internship Board</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </header>
+
+  <section class="container section">
+    <h1>Team</h1>
+    <p class="lead">Executive board and committee leads.</p>
+    <div class="grid" id="teamGrid">
+      <!-- Example member cards. Duplicate and edit. -->
+      <div class="card">
+        <img src="assets/img/member_placeholder.jpg" alt="Headshot">
+        <div class="pad">
+          <strong>First Last</strong><br>
+          <span class="badge">President</span>
+          <div style="margin-top:6px"><a href="#" target="_blank">LinkedIn</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/member_placeholder.jpg" alt="Headshot">
+        <div class="pad">
+          <strong>First Last</strong><br>
+          <span class="badge">Academic Chair</span>
+          <div style="margin-top:6px"><a href="#" target="_blank">LinkedIn</a></div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:12px" class="notice">Tip: replace images in <code>assets/img/</code> and duplicate a <code>.card</code> block per member.</p>
+  </section>
+
+  <footer class="container footer">
+    <div>© <span id="yr"></span> Black Students in Commercial Real Estate — The Ohio State University</div>
+  </footer>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

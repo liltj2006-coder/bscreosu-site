@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSCRE @ Ohio State</title>
+  <meta name="description" content="Black Students in Commercial Real Estate at The Ohio State University">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand"><a href="index.html">BSCRE @ OSU</a></div>
+    <label for="menuToggle" class="brand">☰</label>
+    <input type="checkbox" id="menuToggle" style="display:none">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="internships.html">Internship Board</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="wrap container">
+      <h1>Black Students in Commercial Real Estate</h1>
+      <p class="lead">We empower Ohio State students to explore careers in development, acquisitions, and CRE finance through education, networking, and hands‑on experience.</p>
+      <p style="margin-top:12px">
+        <a class="cta" href="join.html">Join BSCRE</a>
+        <a class="cta" href="internships.html" style="background:#111;margin-left:10px">Internship Board</a>
+      </p>
+    </div>
+  </section>
+  <section class="container section">
+    <h2>What we do</h2>
+    <p>Workshops, alumni panels, modeling sessions, site tours, and internship prep geared toward commercial real estate careers.</p>
+    <div class="grid">
+      <div class="card"><img src="assets/img/card1.jpg" alt=""><div class="pad"><strong>Education</strong><p>Foundations of CRE, underwriting, and case prep.</p></div></div>
+      <div class="card"><img src="assets/img/card2.jpg" alt=""><div class="pad"><strong>Networking</strong><p>Connect with professionals and OSU alumni in the industry.</p></div></div>
+      <div class="card"><img src="assets/img/card3.jpg" alt=""><div class="pad"><strong>Experience</strong><p>Real projects, property tours, and deal discussions.</p></div></div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <div>© <span id="yr"></span> Black Students in Commercial Real Estate — The Ohio State University</div>
+  </footer>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

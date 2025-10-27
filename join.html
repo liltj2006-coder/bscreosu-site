@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSCRE @ Ohio State</title>
+  <meta name="description" content="Black Students in Commercial Real Estate at The Ohio State University">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand"><a href="index.html">BSCRE @ OSU</a></div>
+    <label for="menuToggle" class="brand">☰</label>
+    <input type="checkbox" id="menuToggle" style="display:none">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="internships.html">Internship Board</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </header>
+
+  <section class="container section">
+    <h1>Join BSCRE</h1>
+    <p class="lead">Fill out the interest form to receive meeting invites and internship resources.</p>
+    <p><a class="cta" href="https://forms.gle/your-google-form-id" target="_blank">Open Interest Form</a></p>
+    <div class="section">
+      <h2>Membership Requirements</h2>
+      <ul style="margin-left:18px">
+        <li>Open to all Ohio State students</li>
+        <li>Interest in commercial real estate (no prior experience required)</li>
+        <li>Commitment to inclusive, professional conduct</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <div>© <span id="yr"></span> Black Students in Commercial Real Estate — The Ohio State University</div>
+  </footer>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

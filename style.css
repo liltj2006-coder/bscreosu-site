@@ -21,7 +21,6 @@ body{
   background: var(--bg);
 }
 
-/* Shared container */
 .wrap{
   max-width: var(--max);
   margin: 0 auto;
@@ -52,7 +51,6 @@ body{
   font-size: 22px;
 }
 
-/* Nav */
 .nav{
   display:flex;
   gap: 10px;
@@ -77,20 +75,45 @@ body{
   background: rgba(187,0,0,0.08);
 }
 
-/* HERO */
+/* Buttons (used on home/join later) */
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: transform .06s ease, filter .15s ease, background .15s ease;
+}
+.btn:active{ transform: translateY(1px); }
+
+.btn-primary{
+  background: var(--scarlet);
+  color: var(--white);
+  border-color: var(--scarlet);
+}
+.btn-primary:hover{ filter: brightness(1.03); }
+
+.btn-secondary{
+  background: #fff;
+  color:#111;
+  border-color: #dcdcdc;
+}
+.btn-secondary:hover{ background:#f6f6f6; }
+
+/* HOME: Hero (photo background, black & white) */
 .hero{
   width:100%;
   padding: 56px 0 34px;
 }
 
-/* Photo background (black & white via filter) */
 .hero-photo{
   position: relative;
   overflow: hidden;
   background: #111;
 }
 
-/* Background image layer */
 .hero-photo::before{
   content:"";
   position:absolute;
@@ -103,7 +126,6 @@ body{
   z-index: 0;
 }
 
-/* Dark overlay for readability */
 .hero-photo::after{
   content:"";
   position:absolute;
@@ -172,40 +194,8 @@ body{
   color:#222;
 }
 
-/* Buttons */
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  transition: transform .06s ease, filter .15s ease, background .15s ease;
-}
-
-.btn:active{ transform: translateY(1px); }
-
-.btn-primary{
-  background: var(--scarlet);
-  color: var(--white);
-  border-color: var(--scarlet);
-}
-
-.btn-primary:hover{ filter: brightness(1.03); }
-
-.btn-secondary{
-  background: #fff;
-  color:#111;
-  border-color: #dcdcdc;
-}
-
-.btn-secondary:hover{ background:#f6f6f6; }
-
-/* Sections */
-.section{
-  padding: 22px 0 18px;
-}
+/* HOME: Cards */
+.section{ padding: 22px 0 18px; }
 
 .card-grid{
   display:grid;
@@ -235,22 +225,11 @@ body{
   font-size: 18px;
 }
 
-.info-card h3{
-  margin: 0 0 8px;
-  font-size: 16px;
-}
+.info-card h3{ margin: 0 0 8px; font-size: 16px; }
+.info-card p{ margin: 0; color: #444; line-height: 1.45; font-size: 13.5px; }
 
-.info-card p{
-  margin: 0;
-  color: #444;
-  line-height: 1.45;
-  font-size: 13.5px;
-}
-
-/* CTA */
-.cta{
-  padding: 22px 0 40px;
-}
+/* HOME: CTA */
+.cta{ padding: 22px 0 40px; }
 
 .cta-inner{
   background: #ffffff;
@@ -261,14 +240,81 @@ body{
   text-align:center;
 }
 
-.cta-inner h2{
-  margin: 0 0 8px;
-  font-size: 22px;
+.cta-inner h2{ margin: 0 0 8px; font-size: 22px; }
+.cta-inner p{ margin: 0 0 14px; color: var(--muted); }
+
+/* Leadership page styling (matches your screenshot) */
+.lead-hero{
+  padding: 34px 0 10px;
 }
 
-.cta-inner p{
-  margin: 0 0 14px;
-  color: var(--muted);
+.lead-title{
+  margin: 20px 0 6px;
+  font-size: clamp(28px, 3.2vw, 40px);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.lead-subtitle{
+  margin: 0 auto;
+  max-width: 70ch;
+  text-align: center;
+  color: #666;
+  line-height: 1.5;
+}
+
+.lead-section{
+  padding: 22px 0 44px;
+}
+
+.lead-grid{
+  display: grid;
+  gap: 18px;
+  justify-content: center;
+}
+
+.lead-grid-3{
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  margin-top: 18px;
+}
+
+.lead-grid-2{
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  max-width: 760px;
+  margin: 18px auto 0;
+}
+
+.person-card{
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 14px;
+  text-align: center;
+}
+
+.person-img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #ededed;
+  background: #f3f3f3;
+}
+
+.person-meta{
+  padding-top: 12px;
+}
+
+.person-name{
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.person-role{
+  color: #6a6a6a;
+  font-size: 13.5px;
 }
 
 /* Footer */
@@ -283,4 +329,7 @@ body{
 @media (max-width: 900px){
   .card-grid{ grid-template-columns: 1fr; }
   .hero-inner{ padding: 34px 22px; }
+
+  .lead-grid-3{ grid-template-columns: 1fr; }
+  .lead-grid-2{ grid-template-columns: 1fr; max-width: none; }
 }

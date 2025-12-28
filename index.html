@@ -7,62 +7,80 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo-text">BSCRE</div>
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="leadership.html">Leadership</a>
-      <a href="join.html">Join</a>
-    </nav>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">BSCRE</div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="hero">
-      <p class="eyebrow">The Ohio State University</p>
-      <h1>Black Students in Commercial Real Estate</h1>
-      <p class="subtitle">
-        A student organization focused on education, community, and career access in commercial real estate.
-      </p>
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-skyline">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">THE OHIO STATE UNIVERSITY</p>
+        <h1>Black Students in<br/>Commercial Real Estate</h1>
+        <p class="subtitle">
+          A student organization focused on education, community, and career access in commercial real estate.
+        </p>
 
-      <div class="hero-actions">
-        <a href="join.html" class="button-primary">Get Involved</a>
-        <a href="leadership.html" class="button-ghost">Meet the Team</a>
-      </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="join.html">Get Involved</a>
+          <a class="btn btn-secondary" href="leadership.html">Meet the Team</a>
+        </div>
 
-      <div class="hero-meta">
-        <div class="pill">Development</div>
-        <div class="pill">Acquisitions</div>
-        <div class="pill">Real Estate Finance</div>
-        <div class="pill">Networking</div>
+        <div class="pill-row">
+          <span class="pill">Development</span>
+          <span class="pill">Acquisitions</span>
+          <span class="pill">Real Estate Finance</span>
+          <span class="pill">Networking</span>
+        </div>
       </div>
     </section>
 
-    <section class="grid-3">
-      <div class="card">
-        <h2>What We Do</h2>
-        <p>Speaker events, workshops, deal breakdowns, and career prep for CRE internships and roles.</p>
-      </div>
-      <div class="card">
-        <h2>Who It’s For</h2>
-        <p>Black students at OSU interested in commercial real estate — from beginners to advanced.</p>
-      </div>
-      <div class="card">
-        <h2>Why It Matters</h2>
-        <p>We’re building representation and access in CRE through community + real opportunities.</p>
+    <!-- CARDS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="card-grid">
+          <div class="info-card">
+            <div class="icon-badge" aria-hidden="true">📚</div>
+            <h3>What We Do</h3>
+            <p>Workshops, deal breakdowns, guest speakers, and recruiting prep.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon-badge" aria-hidden="true">👥</div>
+            <h3>Who It’s For</h3>
+            <p>Black students at OSU interested in CRE — beginner to advanced.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon-badge" aria-hidden="true">🏙️</div>
+            <h3>Why It Matters</h3>
+            <p>We build representation and access through community + opportunity.</p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="cta">
-      <div class="cta-inner">
+      <div class="wrap cta-inner">
         <h2>Ready to join BSCRE?</h2>
         <p>Get updates on meetings, events, and opportunities.</p>
-        <a href="join.html" class="button-primary">Join Now</a>
+        <a class="btn btn-primary" href="join.html">Join Now</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>BSCRE · Black Students in Commercial Real Estate · The Ohio State University</p>
+  <footer class="footer">
+    <div class="wrap">
+      <p>BSCRE · Black Students in Commercial Real Estate · The Ohio State University</p>
+    </div>
   </footer>
 </body>
 </html>

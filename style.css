@@ -1089,3 +1089,46 @@ body{
   background: linear-gradient(180deg, #efefef 0%, #f2f2f2 100%);
   padding: 18px 0 52px;
 }
+
+/* =========================
+   LEADERSHIP ALIGNMENT FIX
+   ========================= */
+
+.lead-section{
+  padding: 32px 0 56px;
+}
+
+.lead-grid{
+  display: grid !important;
+  gap: 24px !important;
+  justify-items: center;
+}
+
+.lead-grid-3{
+  grid-template-columns: repeat(3, minmax(260px, 1fr)) !important;
+  max-width: 1000px;
+  margin: 24px auto 0;
+}
+
+.lead-grid-2{
+  grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
+  max-width: 720px;
+  margin: 24px auto 0;
+}
+
+.person-card{
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile fix */
+@media (max-width: 900px){
+  .lead-grid-3,
+  .lead-grid-2{
+    grid-template-columns: 1fr !important;
+    max-width: none;
+  }
+}

@@ -791,7 +791,7 @@ body{
   content:"";
   position:absolute;
   inset:0;
-  background-image: url("join-bg.png");
+  background-image: url("join-bg.jpg");
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) contrast(1.05) brightness(0.92);

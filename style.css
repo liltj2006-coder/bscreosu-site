@@ -1160,3 +1160,25 @@ body{
   margin-bottom: 12px;
   background: #f2f2f2;
 }
+
+/* =========================
+   HEADSHOT PER-IMAGE OVERRIDES
+   (forces the tuning to apply)
+   ========================= */
+
+.person-img{
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 14px;
+}
+
+/* Move crop up/down (FACE CENTRIC) */
+.person-img.img-up   { object-position: center 20% !important; }
+.person-img.img-down { object-position: center 40% !important; }
+
+/* Zoom in/out */
+.person-img.img-tight { transform: scale(1.05) !important; transform-origin: center; }
+.person-img.img-loose { transform: scale(0.95) !important; transform-origin: center; }

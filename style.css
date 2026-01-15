@@ -1182,3 +1182,10 @@ body{
 /* Zoom in/out */
 .person-img.img-tight { transform: scale(1.05) !important; transform-origin: center; }
 .person-img.img-loose { transform: scale(0.95) !important; transform-origin: center; }
+
+/* FORCE per-headshot tuning to apply */
+.person-img.img-up   { object-position: center 20% !important; }
+.person-img.img-down { object-position: center 40% !important; }
+
+.person-img.img-tight { transform: scale(1.05) !important; transform-origin: center; }
+.person-img.img-loose { transform: scale(0.95) !important; transform-origin: center; }
